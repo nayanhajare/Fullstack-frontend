@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/auth.css">
+    <title>Sign Up - Todo App</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <main id="main">
+      <div class="auth-container">
+        <div class="auth-card">
+          <div class="auth-header">
+            <h1>Create Account</h1>
+            <p>Join us and start organizing your tasks</p>
+          </div>
+          
+          <div id="message" class="message-display"></div>
+          
+          <form id="form" class="auth-form">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input id="username" type="text" placeholder="Enter your username" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" placeholder="Enter your email" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input id="password" type="password" placeholder="Create a password" required />
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">
+              Create Account
+            </button>
+          </form>
+          
+          <div class="auth-footer">
+            <p>Already have an account? <a href="./login.html">Sign in here</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </body>
+  <script src="./scripts/signup.js" type="module"></script>
+</html>
